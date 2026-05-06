@@ -17,8 +17,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="container-x mt-28">
-      <div className="rounded-3xl border border-hairline bg-white p-8 sm:p-12">
+    <section id="contact" className="container-x mt-20 sm:mt-28">
+      <div className="rounded-3xl border border-hairline bg-white p-6 sm:p-12">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Get in touch</p>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
           Let's build something useful.
@@ -32,14 +32,15 @@ export default function Contact() {
             Email me
             <ArrowUpRight size={16} className="ml-1" />
           </a>
-          <button type="button" onClick={copy} className="btn-ghost">
+          <button type="button" onClick={copy} className="btn-ghost max-w-full break-all">
             {copied ? (
               <>
                 <Check size={16} className="mr-1" /> Copied
               </>
             ) : (
               <>
-                <Copy size={16} className="mr-1" /> {EMAIL}
+                <Copy size={16} className="mr-1 flex-none" />
+                <span className="truncate">{EMAIL}</span>
               </>
             )}
           </button>

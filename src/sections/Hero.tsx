@@ -20,7 +20,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        <h1 className="text-[34px] font-semibold leading-[1.08] tracking-tight text-ink sm:text-5xl md:text-[56px]">
+        <h1 className="break-words text-[32px] font-semibold leading-[1.08] tracking-tight text-ink sm:text-5xl md:text-[56px]">
           Hi there, I'm Nurudeen!
           <br />
           You can call me{' '}

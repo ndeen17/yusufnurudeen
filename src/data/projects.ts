@@ -117,9 +117,9 @@ export const projects: Project[] = [
     tag: 'AI · Automation · Data Intelligence',
     positioning: 'AI + Automation + Data Intelligence',
     tagline:
-      'An AI automation built on TaskAce AI for a homeless-to-housing nonprofit — turning raw intake data into structured psychological insight and predictive analytics.',
+      'An AI automation built on Taskade AI for a homeless-to-housing nonprofit — turning raw intake data into structured psychological insight and predictive analytics.',
     summary:
-      'An AI-powered automation system built on TaskAce AI for Pathfinders for Hope, a nonprofit focused on transitioning individuals from homelessness to stable living. It streamlines applicant intake and evaluation by turning raw intake data into structured psychological insight and predictive analytics that drive better decisions.',
+      'An AI-powered automation system built on Taskade AI for Pathfinders for Hope, a nonprofit focused on transitioning individuals from homelessness to stable living. It streamlines applicant intake and evaluation by turning raw intake data into structured psychological insight and predictive analytics that drive better decisions.',
     coreIdea:
       'Transforms raw intake data into structured psychological insights and predictive analytics for better decision-making.',
     features: [

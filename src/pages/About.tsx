@@ -22,7 +22,7 @@ export default function About() {
           Right now I'm building <span className="text-ink">Artemis Hiring</span>. Previously I've
           worked with teams at <span className="text-ink">Reeka</span>, and shipped products like{' '}
           <span className="text-ink">Orukọ-mi</span> and an AI-driven deception detection &amp;
-          intake automation system on TaskAce AI.
+          intake automation system on Taskade AI.
         </p>
       </div>
 
@@ -54,7 +54,7 @@ export default function About() {
           </li>
           <li className="flex items-baseline justify-between gap-6 py-4">
             <div>
-              <p className="font-medium text-ink">AI workflow architect — TaskAce AI</p>
+              <p className="font-medium text-ink">AI workflow architect — Taskade AI</p>
               <p className="text-sm text-muted">Deception detection & intake automation</p>
             </div>
             <span className="font-mono text-xs text-muted">2025</span>

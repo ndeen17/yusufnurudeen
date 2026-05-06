@@ -75,8 +75,8 @@ export default function CaseStudy() {
       {project.extras?.metrics && (
         <section className="mt-14">
           <h2 className="text-xl font-semibold tracking-tight text-ink">What it does</h2>
-          <div className="mt-4 overflow-hidden rounded-2xl border border-hairline">
-            <table className="w-full text-left text-sm">
+          <div className="mt-4 overflow-x-auto rounded-2xl border border-hairline">
+            <table className="w-full min-w-[420px] text-left text-sm">
               <thead className="bg-chip text-xs uppercase tracking-wide text-muted">
                 <tr>
                   <th className="px-4 py-3 font-medium">Feature</th>
