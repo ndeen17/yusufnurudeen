@@ -38,9 +38,20 @@ export default function Hero() {
         </p>
         <p className="mt-4 max-w-[640px] text-lg leading-[1.55] text-muted sm:text-xl">
           I'm currently building{' '}
-          <InlineLogo src="/icons/logo-1.png" alt="" label="Artemis Hiring" href="#artemis" />.
-          Previously, I've worked with teams at{' '}
-          <InlineLogo src="/icons/logo-2.png" alt="" label="Reeka" href="#reeka" />.
+          <InlineLogo
+            src="/icons/logo-1.png"
+            alt=""
+            label="Artemis Hiring"
+            href="https://www.artemishiring.co.uk/"
+          />
+          . Previously, I've worked with teams at{' '}
+          <InlineLogo
+            src="/icons/logo-2.png"
+            alt=""
+            label="Reeka"
+            href="https://www.reeka.app/"
+          />
+          .
         </p>
       </motion.div>
     </section>
