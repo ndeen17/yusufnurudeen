@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
         <div>
           <p className="text-sm font-medium text-ink">Nurudeen Yusuf</p>
-          <p className="text-sm text-muted">Software engineer & AI workflow architect — Abuja, NG</p>
+          <p className="text-sm text-muted">Software engineer & AI workflow architect · Abuja, NG</p>
         </div>
         <div className="flex items-center gap-3 text-muted">
           <a href="mailto:nurudeeny17@gmail.com" aria-label="Email" className="rounded-full border border-hairline bg-white p-2 transition hover:text-ink">

@@ -28,21 +28,21 @@ const shots = (slug: string, count: number): string[] =>
 export const projects: Project[] = [
   {
     slug: 'artemis-hiring',
-    title: 'An AI-powered career platform — from application to offer',
+    title: 'An AI-powered career platform: from application to offer',
     company: 'Artemis',
     year: '2026',
     role: 'Founder · Full-stack & AI Engineer',
     tag: 'AI · Career Platform · SaaS',
     positioning: 'AI Career Platform / SaaS',
     tagline:
-      'Land the job, not just another application — CV review, application tracking, AI-tailored CVs & cover letters, and realtime voice mock interviews in one workflow.',
+      'Land the job, not just another application. CV review, application tracking, AI-tailored CVs and cover letters, and realtime voice mock interviews in one workflow.',
     summary:
-      'Artemis is an AI-powered career platform that helps job seekers go from application to offer. It combines CV review, application tracking, AI-generated tailored CVs and cover letters, and realtime voice-based mock interviews into one structured workflow — so candidates can prepare, apply, and practice without juggling separate tools.',
+      'Artemis is an AI-powered career platform that helps job seekers go from application to offer. It combines CV review, application tracking, AI-generated tailored CVs and cover letters, and realtime voice-based mock interviews into one structured workflow, so candidates can prepare, apply, and practice without juggling separate tools.',
     coreIdea: 'Land the job, not just another application.',
     features: [
       {
         label: 'Personalised onboarding',
-        body: 'A short guided flow — target role, LinkedIn, goal, and CV — sets up a personal plan that shapes the rest of the experience.',
+        body: 'A short guided flow (target role, LinkedIn, goal, and CV) sets up a personal plan that shapes the rest of the experience.',
       },
       {
         label: 'CV review & AI rewriter',
@@ -53,12 +53,12 @@ export const projects: Project[] = [
         body: 'A pipeline view (think Trello for job hunting) tracks every role from applied to offer. For each application, Artemis generates a tailored CV and cover letter and exports both as polished PDFs.',
       },
       {
-        label: 'AI mock interviews — text & voice',
+        label: 'AI mock interviews: text and voice',
         body: 'Practice with "Norah", an AI interviewer that adapts to the role. Voice mode is a real, low-latency phone-style conversation; a 3D voice blob reacts as you speak, and you get a structured score and transcript at the end.',
       },
       {
         label: 'Dashboard & profile',
-        body: 'A single "where am I right now" view: readiness score, next best actions, nudges after weak interviews, and LinkedIn analysis — all tied to the user\'s goal.',
+        body: 'A single "where am I right now" view: readiness score, next best actions, nudges after weak interviews, and LinkedIn analysis, all tied to the user\'s goal.',
       },
       {
         label: 'Admin & operations',
@@ -70,11 +70,11 @@ export const projects: Project[] = [
       },
     ],
     demonstrates: [
-      'Product thinking — an opinionated, goal-aware workflow, not just a pile of features',
-      'Full-stack ownership — designed, built, and shipped end-to-end (frontend, backend, database, AI)',
-      'Applied AI — practical use of large language models and realtime voice with guardrails on quality and cost',
-      'Architecture for SaaS — clean separation of concerns, shared contracts between frontend and backend, background workers for heavy jobs',
-      'UX craft — a calm, design-system-led interface with motion and a touch of 3D where it adds clarity',
+      'Product thinking: an opinionated, goal-aware workflow, not just a pile of features',
+      'Full-stack ownership: designed, built, and shipped end-to-end (frontend, backend, database, AI)',
+      'Applied AI: practical use of large language models and realtime voice with guardrails on quality and cost',
+      'Architecture for SaaS: clean separation of concerns, shared contracts between frontend and backend, background workers for heavy jobs',
+      'UX craft: a calm, design-system-led interface with motion and a touch of 3D where it adds clarity',
     ],
     images: Array.from({ length: 10 }, (_, i) => `/projects/artemis-hiring/shot-${String(i + 8).padStart(2, '0')}.png`),
     cover: '/projects/artemis-hiring/shot-08.png',
@@ -129,9 +129,9 @@ export const projects: Project[] = [
     tag: 'AI · Consumer Product',
     positioning: 'AI Consumer Product',
     tagline:
-      'An AI web app that translates Nigerian names and surfaces their meanings — type a name, get origin, meaning, and pronunciation in seconds.',
+      'An AI web app that translates Nigerian names and surfaces their meanings. Type a name, get origin, meaning, and pronunciation in seconds.',
     summary:
-      'Orukọ-mi is an AI-powered web app that translates Nigerian names and surfaces their meanings. It combines culture and AI to make local-language insights globally accessible — type a name, get its origin, meaning, and pronunciation in seconds.',
+      'Orukọ-mi is an AI-powered web app that translates Nigerian names and surfaces their meanings. It combines culture and AI to make local-language insights globally accessible. Type a name, get its origin, meaning, and pronunciation in seconds.',
     coreIdea:
       'Combines culture and AI to make local language insights globally accessible.',
     features: [
@@ -156,7 +156,7 @@ export const projects: Project[] = [
     tag: 'AI · Automation · Data Intelligence',
     positioning: 'AI + Automation + Data Intelligence',
     tagline:
-      'An AI automation built on Taskade AI for a homeless-to-housing nonprofit — turning raw intake data into structured psychological insight and predictive analytics.',
+      'An AI automation built on Taskade AI for a homeless-to-housing nonprofit, turning raw intake data into structured psychological insight and predictive analytics.',
     summary:
       'An AI-powered automation system built on Taskade AI for Pathfinders for Hope, a nonprofit focused on transitioning individuals from homelessness to stable living. It streamlines applicant intake and evaluation by turning raw intake data into structured psychological insight and predictive analytics that drive better decisions.',
     coreIdea:

@@ -10,7 +10,7 @@ export default function About() {
 
       <div className="mt-8 space-y-5 text-lg leading-[1.6] text-muted">
         <p>
-          I'm Nurudeen Yusuf — based in Abuja, Nigeria. I build scalable backend systems and
+          I'm Nurudeen Yusuf, based in Abuja, Nigeria. I build scalable backend systems and
           AI-powered products that turn complex processes into simple, high-impact solutions.
         </p>
         <p>
@@ -40,21 +40,21 @@ export default function About() {
         <ul className="mt-4 divide-y divide-hairline border-y border-hairline">
           <li className="flex items-baseline justify-between gap-6 py-4">
             <div>
-              <p className="font-medium text-ink">Founder & engineer — Artemis</p>
+              <p className="font-medium text-ink">Founder & engineer · Artemis</p>
               <p className="text-sm text-muted">AI-powered career platform · from application to offer</p>
             </div>
-            <span className="font-mono text-xs text-muted">2026 — Present</span>
+            <span className="font-mono text-xs text-muted">2026 – Present</span>
           </li>
           <li className="flex items-baseline justify-between gap-6 py-4">
             <div>
-              <p className="font-medium text-ink">Software engineer — Reeka</p>
+              <p className="font-medium text-ink">Software engineer · Reeka</p>
               <p className="text-sm text-muted">PropTech · multi-role enterprise platform</p>
             </div>
             <span className="font-mono text-xs text-muted">2025</span>
           </li>
           <li className="flex items-baseline justify-between gap-6 py-4">
             <div>
-              <p className="font-medium text-ink">AI workflow architect — Taskade AI</p>
+              <p className="font-medium text-ink">AI workflow architect · Taskade AI</p>
               <p className="text-sm text-muted">Deception detection & intake automation</p>
             </div>
             <span className="font-mono text-xs text-muted">2025</span>
