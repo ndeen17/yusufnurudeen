@@ -33,8 +33,6 @@ export default function Cases() {
               </div>
               <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs uppercase tracking-wide text-muted">
                 <span>{p.company}</span>
-                <span aria-hidden="true">·</span>
-                <span>{p.year}</span>
               </div>
               <h2 className="mt-1 text-xl font-medium text-ink sm:text-[22px]">{p.title}</h2>
               <p className="mt-2 text-sm text-muted">{p.tagline}</p>

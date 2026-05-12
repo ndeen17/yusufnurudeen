@@ -23,8 +23,6 @@ export default function CaseStudy() {
         <div className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-wide text-muted">
           <span>{project.company}</span>
           <span aria-hidden="true">·</span>
-          <span>{project.year}</span>
-          <span aria-hidden="true">·</span>
           <span>{project.role}</span>
         </div>
         <h1 className="mt-3 text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl">

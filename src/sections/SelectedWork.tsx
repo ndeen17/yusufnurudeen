@@ -49,8 +49,6 @@ export default function SelectedWork() {
               <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs uppercase tracking-wide text-muted">
                 <span>{p.company}</span>
                 <span aria-hidden="true">·</span>
-                <span>{p.year}</span>
-                <span aria-hidden="true">·</span>
                 <span>{p.tag}</span>
               </div>
 
