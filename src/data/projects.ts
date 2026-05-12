@@ -28,30 +28,69 @@ const shots = (slug: string, count: number): string[] =>
 export const projects: Project[] = [
   {
     slug: 'artemis-hiring',
-    title: 'A modern hiring platform for high-velocity teams',
-    company: 'Artemis Hiring',
+    title: 'An AI-powered career platform — from application to offer',
+    company: 'Artemis',
     year: '2026',
-    role: 'Software Engineer · Founder',
-    tag: 'SaaS · Hiring Platform',
-    positioning: 'SaaS / Hiring Platform',
+    role: 'Founder · Full-stack & AI Engineer',
+    tag: 'AI · Career Platform · SaaS',
+    positioning: 'AI Career Platform / SaaS',
     tagline:
-      'A modern hiring platform that pairs employer branding with structured workflows so teams move from job opening to signed offer without the chaos.',
+      'Land the job, not just another application — CV review, application tracking, AI-tailored CVs & cover letters, and realtime voice mock interviews in one workflow.',
     summary:
-      'Artemis Hiring is a recruitment-focused platform designed to help companies attract, assess, and hire talent efficiently. It pairs strong employer branding with structured hiring workflows so teams can move from a job opening to a signed offer without the chaos.',
-    coreIdea:
-      'A modern hiring solution that combines employer branding with structured hiring workflows.',
+      'Artemis is an AI-powered career platform that helps job seekers go from application to offer. It combines CV review, application tracking, AI-generated tailored CVs and cover letters, and realtime voice-based mock interviews into one structured workflow — so candidates can prepare, apply, and practice without juggling separate tools.',
+    coreIdea: 'Land the job, not just another application.',
     features: [
-      { label: 'Employer-branded landing pages', body: 'Public career pages with conversion-focused CTA funnels.' },
-      { label: 'Job listings & hiring pipeline', body: 'Roles are first-class objects with stages, owners, and SLAs.' },
-      { label: 'Candidate evaluation', body: 'Structured scorecards and stage-aware feedback collection.' },
-      { label: 'Onboarding flow', body: 'Hand-off from offer to first day without spreadsheet juggling.' },
-      { label: 'Figma-backed UI/UX', body: 'A consistent design system kept in sync with the build.' },
+      {
+        label: 'Onboarding & goals',
+        body: 'Guided flow (role → LinkedIn → goal → CV) sets a personalised target and drives copy and CTAs across the app.',
+      },
+      {
+        label: 'CV upload, analysis & rewriter',
+        body: 'PDF/text parsing with a polling Mongo-backed worker that runs an OpenAI GPT-5 rubric (Clarity, Quantified Impact, Role-fit, Structure) and returns Zod-validated scores, bullet-level feedback, and keyword gaps. A CvRewriter surface applies AI-suggested rewrites.',
+      },
+      {
+        label: 'Applications tracker',
+        body: 'CRM-style pipeline with stages, outcomes, and JD storage. Per application, users generate a Targeted CV (diffed vs. base) and an AI-drafted Cover Letter, and export both as PDFs.',
+      },
+      {
+        label: 'AI mock interviews (text + voice)',
+        body: 'Persona-driven sessions ("Norah") with a status machine (configuring → briefed → live → scoring → completed). Voice mode uses direct WebRTC to OpenAI Realtime with ephemeral keys; backend handles persona, quota gating, control WebSocket, and batched transcript persistence. A Three.js voice blob reacts to audio intensity.',
+      },
+      {
+        label: 'Dashboard & profile',
+        body: 'A single "where am I right now" view: readiness score, action list, weak-interview nudges, LinkedIn analysis, and goal-aware copy.',
+      },
+      {
+        label: 'Admin & ops',
+        body: 'Admin controller for AI outcome monitoring, audit log model, interview sweep worker, and a Resend webhook for transactional email.',
+      },
+      {
+        label: 'Auth',
+        body: 'Custom JWT (access + refresh) plus Google OAuth.',
+      },
     ],
-    demonstrates: ['Product thinking', 'SaaS architecture mindset', 'Frontend + backend integration'],
+    demonstrates: [
+      'Product thinking — opinionated, goal-aware flows instead of a feature dump',
+      'SaaS architecture mindset — monorepo, shared Zod/domain layer, repositories + controllers + services + workers, idempotent AI jobs',
+      'Frontend + backend integration — type-safe contracts via @artemis/shared, realtime control plane, streaming AI surfaces',
+      'Applied AI engineering — prompt design with rubrics, strict JSON + Zod validation, cost/latency-aware Realtime WebRTC',
+      'UX craft — design-system-driven UI with motion and 3D, status-machine-driven pages',
+    ],
     images: shots('artemis-hiring', 17),
     cover: '/projects/artemis-hiring/shot-01.png',
     imageFit: 'contain',
     links: [{ label: 'Visit artemishiring.co.uk', href: 'https://www.artemishiring.co.uk/' }],
+    extras: {
+      technicalOverview: [
+        'Monorepo: npm workspaces — ArtemisFev2 (frontend), ArtemisBev2 (backend), shared (@artemis/shared — Zod schemas + domain types).',
+        'Frontend: React 18, Vite, TypeScript, Tailwind, shadcn/Radix, React Router, TanStack Query, Zustand, React Hook Form + Zod, Framer Motion, Three.js / @react-three/fiber.',
+        'Backend: Node 20, Express, TypeScript, Mongoose, Zod, Socket.io / ws, Pino, Multer, PDFKit, pdf-parse.',
+        'Database: MongoDB Atlas.',
+        'AI: OpenAI GPT-4o / GPT-5-nano + Realtime API (WebRTC).',
+        'Testing/CI: Vitest, Playwright e2e, Lighthouse CI, Husky + lint-staged, ESLint, Prettier.',
+        'Deploy: Docker, Vercel (frontend), Render-style build (backend).',
+      ],
+    },
   },
   {
     slug: 'reeka',

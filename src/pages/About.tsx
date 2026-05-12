@@ -19,7 +19,7 @@ export default function About() {
           automations that actually move the metric they're built for.
         </p>
         <p>
-          Right now I'm building <span className="text-ink">Artemis Hiring</span>. Previously I've
+          Right now I'm building <span className="text-ink">Artemis</span>. Previously I've
           worked with teams at <span className="text-ink">Reeka</span>, and shipped products like{' '}
           <span className="text-ink">Orukọ-mi</span> and an AI-driven deception detection &amp;
           intake automation system on Taskade AI.
@@ -40,8 +40,8 @@ export default function About() {
         <ul className="mt-4 divide-y divide-hairline border-y border-hairline">
           <li className="flex items-baseline justify-between gap-6 py-4">
             <div>
-              <p className="font-medium text-ink">Founding engineer — Artemis Hiring</p>
-              <p className="text-sm text-muted">Modern hiring platform · SaaS</p>
+              <p className="font-medium text-ink">Founder & engineer — Artemis</p>
+              <p className="text-sm text-muted">AI-powered career platform · from application to offer</p>
             </div>
             <span className="font-mono text-xs text-muted">2026 — Present</span>
           </li>

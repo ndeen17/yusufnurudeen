@@ -41,7 +41,7 @@ export default function Hero() {
           <InlineLogo
             src="/icons/logo-1.png"
             alt=""
-            label="Artemis Hiring"
+            label="Artemis"
             href="https://www.artemishiring.co.uk/"
           />
           . Previously, I've worked with teams at{' '}
